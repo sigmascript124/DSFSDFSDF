@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой первый сайт</title>
+    <title>HLTV for School — World Ranking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Привет, мир! Мой сайт работает на GitHub Pages.</h1>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-bold">HLTV</span><span class="logo-sub">.school</span>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link active">Рейтинг</a>
+                <a href="#" class="nav-link">Матчи</a>
+                <a href="#" class="nav-link">Команды</a>
+                <a href="#" class="nav-link">Статистика</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <div class="container">
+            
+            <div class="ranking-header">
+                <h1>Школьный рейтинг команд</h1>
+                <p class="subtitle">Рейтинг обновляется по результатам турниров и рофло-матчей</p>
+            </div>
+
+            <!-- Таблица рейтинга -->
+            <div class="ranking-list">
+                
+                <!-- 1 место -->
+                <div class="ranking-item rank-1">
+                    <div class="rank-position">#1</div>
+                    <div class="team-info">
+                        <div class="team-logo-placeholder">TS</div>
+                        <div class="team-details">
+                            <span class="team-name">Team Spils</span>
+                            <span class="team-players">Игрок 1, Игрок 2, Игрок 3, Игрок 4, Игрок 5</span>
+                        </div>
+                    </div>
+                    <div class="school-points">
+                        <span class="points-num">1000</span>
+                        <span class="points-label">School Points</span>
+                    </div>
+                </div>
+
+                <!-- 2 место -->
+                <div class="ranking-item rank-2">
+                    <div class="rank-position">#2</div>
+                    <div class="team-info">
+                        <div class="team-logo-placeholder">AB</div>
+                        <div class="team-details">
+                            <span class="team-name">Ass Breakest</span>
+                            <span class="team-players">Игрок 1, Игрок 2, Игрок 3, Игрок 4, Игрок 5</span>
+                        </div>
+                    </div>
+                    <div class="school-points">
+                        <span class="points-num">750</span>
+                        <span class="points-label">School Points</span>
+                    </div>
+                </div>
+
+                <!-- 3 место -->
+                <div class="ranking-item rank-3">
+                    <div class="rank-position">#3</div>
+                    <div class="team-info">
+                        <div class="team-logo-placeholder">NN</div>
+                        <div class="team-details">
+                            <span class="team-name">No Name</span>
+                            <span class="team-players">Игрок 1, Игрок 2, Игрок 3, Игрок 4, Игрок 5</span>
+                        </div>
+                    </div>
+                    <div class="school-points">
+                        <span class="points-num">420</span>
+                        <span class="points-label">School Points</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 HLTV School Edition. Сделано специально для школьных турниров.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
