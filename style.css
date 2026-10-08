@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1b1f23;
+    color: #e1e4e8;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Шапка */
+.header {
+    background-color: #0e1215;
+    border-bottom: 2px solid #282d32;
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.logo-bold {
+    color: #2e86de;
+}
+
+.logo-sub {
+    color: #8a96a3;
+    font-size: 18px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #8a96a3;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffffff;
+}
+
+/* Заголовок рейтинга */
+.main-content {
+    padding: 40px 0;
+}
+
+.ranking-header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #282d32;
+    padding-bottom: 15px;
+}
+
+.ranking-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.subtitle {
+    color: #8a96a3;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Элементы списка команд */
+.ranking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ranking-item {
+    background-color: #24292e;
+    border: 1px solid #2f363d;
+    border-radius: 6px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.ranking-item:hover {
+    transform: translateX(4px);
+    border-color: #2e86de;
+}
+
+.rank-position {
+    font-size: 22px;
+    font-weight: 900;
+    width: 45px;
+    color: #8a96a3;
+}
+
+.rank-1 .rank-position { color: #f1c40f; } /* Золото */
+.rank-2 .rank-position { color: #bdc3c7; } /* Серебро */
+.rank-3 .rank-position { color: #e67e22; } /* Бронза */
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.team-logo-placeholder {
+    width: 42px;
+    height: 42px;
+    background-color: #1b1f23;
+    border: 1px solid #3b424a;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: #2e86de;
+}
+
+.team-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.team-players {
+    font-size: 13px;
+    color: #8a96a3;
+}
+
+/* Очки School Points */
+.school-points {
+    text-align: right;
+    background-color: #1b1f23;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #2f363d;
+}
+
+.points-num {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #2e86de;
+}
+
+.points-label {
+    font-size: 11px;
+    color: #8a96a3;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Подвал */
+.footer {
+    border-top: 1px solid #282d32;
+    padding: 25px 0;
+    text-align: center;
+    color: #6a737d;
+    font-size: 13px;
+    margin-top: 50px;
+}
