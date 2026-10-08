@@ -11,7 +11,6 @@
 </head>
 <body>
 
-    <!-- Шапка сайта -->
     <header class="header">
         <div class="container header-container">
             <div class="logo">
@@ -26,63 +25,164 @@
         </div>
     </header>
 
-    <!-- Основной контент -->
     <main class="main-content">
         <div class="container">
             
             <div class="ranking-header">
                 <h1>Школьный рейтинг команд</h1>
-                <p class="subtitle">Рейтинг обновляется по результатам турниров и рофло-матчей</p>
+                <p class="subtitle">Нажмите на команду, чтобы увидеть состав и подробности</p>
             </div>
 
-            <!-- Таблица рейтинга -->
             <div class="ranking-list">
                 
-                <!-- 1 место -->
-                <div class="ranking-item rank-1">
-                    <div class="rank-position">#1</div>
-                    <div class="team-info">
-                        <div class="team-logo-placeholder">TS</div>
-                        <div class="team-details">
-                            <span class="team-name">Team Spils</span>
-                            <span class="team-players">Игрок 1, Игрок 2, Игрок 3, Игрок 4, Игрок 5</span>
+                <!-- 1 место: Team Spils -->
+                <div class="team-card rank-1">
+                    <div class="ranking-item">
+                        <div class="rank-position">#1</div>
+                        <div class="team-info">
+                            <div class="team-logo-box">
+                                <img src="ts.png" alt="Team Spils" class="team-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="team-logo-fallback">TS</div>
+                            </div>
+                            <div class="team-details">
+                                <span class="team-name">Team Spils</span>
+                                <span class="team-players-summary">2 игрока в составе</span>
+                            </div>
                         </div>
+                        <div class="school-points">
+                            <span class="points-num">1000</span>
+                            <span class="points-label">School Points</span>
+                        </div>
+                        <div class="arrow-icon">▼</div>
                     </div>
-                    <div class="school-points">
-                        <span class="points-num">1000</span>
-                        <span class="points-label">School Points</span>
+                    
+                    <!-- Выдвигающаяся панель -->
+                    <div class="team-expandable">
+                        <div class="expandable-content">
+                            <h3>Состав команды</h3>
+                            <div class="roster-grid">
+                                <div class="player-card">
+                                    <div class="player-avatar-box">
+                                        <img src="players/spils1.png" alt="Player 1" class="player-avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="player-avatar-fallback">P1</div>
+                                    </div>
+                                    <div class="player-info">
+                                        <span class="player-nick">Player 1</span>
+                                        <span class="player-role">AWP / Капитан</span>
+                                    </div>
+                                </div>
+                                <div class="player-card">
+                                    <div class="player-avatar-box">
+                                        <img src="players/spils2.png" alt="Player 2" class="player-avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="player-avatar-fallback">P2</div>
+                                    </div>
+                                    <div class="player-info">
+                                        <span class="player-nick">Player 2</span>
+                                        <span class="player-role">Rifler / Entry</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- 2 место -->
-                <div class="ranking-item rank-2">
-                    <div class="rank-position">#2</div>
-                    <div class="team-info">
-                        <div class="team-logo-placeholder">AB</div>
-                        <div class="team-details">
-                            <span class="team-name">Ass Breakest</span>
-                            <span class="team-players">Игрок 1, Игрок 2, Игрок 3, Игрок 4, Игрок 5</span>
+                <!-- 2 место: Ass Breakest -->
+                <div class="team-card rank-2">
+                    <div class="ranking-item">
+                        <div class="rank-position">#2</div>
+                        <div class="team-info">
+                            <div class="team-logo-box">
+                                <img src="ab.png" alt="Ass Breakest" class="team-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="team-logo-fallback">AB</div>
+                            </div>
+                            <div class="team-details">
+                                <span class="team-name">Ass Breakest</span>
+                                <span class="team-players-summary">2 игрока в составе</span>
+                            </div>
                         </div>
+                        <div class="school-points">
+                            <span class="points-num">750</span>
+                            <span class="points-label">School Points</span>
+                        </div>
+                        <div class="arrow-icon">▼</div>
                     </div>
-                    <div class="school-points">
-                        <span class="points-num">750</span>
-                        <span class="points-label">School Points</span>
+                    
+                    <div class="team-expandable">
+                        <div class="expandable-content">
+                            <h3>Состав команды</h3>
+                            <div class="roster-grid">
+                                <div class="player-card">
+                                    <div class="player-avatar-box">
+                                        <img src="players/ab1.png" alt="Player 1" class="player-avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="player-avatar-fallback">P1</div>
+                                    </div>
+                                    <div class="player-info">
+                                        <span class="player-nick">Player 1</span>
+                                        <span class="player-role">AWP / Captain</span>
+                                    </div>
+                                </div>
+                                <div class="player-card">
+                                    <div class="player-avatar-box">
+                                        <img src="players/ab2.png" alt="Player 2" class="player-avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="player-avatar-fallback">P2</div>
+                                    </div>
+                                    <div class="player-info">
+                                        <span class="player-nick">Player 2</span>
+                                        <span class="player-role">Support</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- 3 место -->
-                <div class="ranking-item rank-3">
-                    <div class="rank-position">#3</div>
-                    <div class="team-info">
-                        <div class="team-logo-placeholder">NN</div>
-                        <div class="team-details">
-                            <span class="team-name">No Name</span>
-                            <span class="team-players">Игрок 1, Игрок 2, Игрок 3, Игрок 4, Игрок 5</span>
+                <!-- 3 место: No Name -->
+                <div class="team-card rank-3">
+                    <div class="ranking-item">
+                        <div class="rank-position">#3</div>
+                        <div class="team-info">
+                            <div class="team-logo-box">
+                                <img src="nn.png" alt="No Name" class="team-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="team-logo-fallback">NN</div>
+                            </div>
+                            <div class="team-details">
+                                <span class="team-name">No Name</span>
+                                <span class="team-players-summary">2 игрока в составе</span>
+                            </div>
                         </div>
+                        <div class="school-points">
+                            <span class="points-num">420</span>
+                            <span class="points-label">School Points</span>
+                        </div>
+                        <div class="arrow-icon">▼</div>
                     </div>
-                    <div class="school-points">
-                        <span class="points-num">420</span>
-                        <span class="points-label">School Points</span>
+                    
+                    <div class="team-expandable">
+                        <div class="expandable-content">
+                            <h3>Состав команды</h3>
+                            <div class="roster-grid">
+                                <div class="player-card">
+                                    <div class="player-avatar-box">
+                                        <img src="players/nn1.png" alt="Player 1" class="player-avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="player-avatar-fallback">P1</div>
+                                    </div>
+                                    <div class="player-info">
+                                        <span class="player-nick">Player 1</span>
+                                        <span class="player-role">Entry Fragger</span>
+                                    </div>
+                                </div>
+                                <div class="player-card">
+                                    <div class="player-avatar-box">
+                                        <img src="players/nn2.png" alt="Player 2" class="player-avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                        <div class="player-avatar-fallback">P2</div>
+                                    </div>
+                                    <div class="player-info">
+                                        <span class="player-nick">Player 2</span>
+                                        <span class="player-role">Rifler</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -91,12 +191,12 @@
         </div>
     </main>
 
-    <!-- Подвал -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 HLTV School Edition. Сделано специально для школьных турниров.</p>
+            <p>&copy; 2026 HLTV School Edition.</p>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
